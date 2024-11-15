@@ -15,16 +15,16 @@ while True:
     if nomer == 1:
         count += 1
         for zapis in text:
-            print("=" * 20, f"Номер записи: {zapis["id"]}", "=" * 20)
-            print(f"Название города: {zapis["name"]} \nНазвание страны в котором находится город: {zapis["country"]} \nЯвляется ли население города больше 100 000 человек: {zapis["is_big"]} \nНаселение города: {zapis["people_count"]}")
+            print("=" * 20, f"Номер записи: {zapis['id']}", "=" * 20)
+            print(f"Название города: {zapis['name']} \nНазвание страны в котором находится город: {zapis['country']} \nЯвляется ли население города больше 100 000 человек: {zapis['is_big']} \nНаселение города: {zapis['people_count']}")
     elif nomer == 2:
         count += 1
         pole = input("Введите поле: ")
         found = False
         for zapis in text:
-            if zapis["id"] == pole:
-                print("=" * 20, f"Номер записи: {zapis["id"]}", "=" * 20,)
-                print(f"Название города: {zapis["name"]} \nНазвание страны в котором находится город: {zapis["country"]} \nЯвляется ли население города больше 100 000 человек: {zapis["is_big"]} \nНаселение города: {zapis["people_count"]}")
+            if zapis['id'] == pole:
+                print("=" * 20, f"Номер записи: {zapis['id']}", "=" * 20,)
+                print(f"Название города: {zapis['name']} \nНазвание страны в котором находится город: {zapis['country']} \nЯвляется ли население города больше 100 000 человек: {zapis['is_big']} \nНаселение города: {zapis['[people_count']}")
                 found = True
                 break
         if found == False:
@@ -47,7 +47,7 @@ while True:
         nomer = input("Введите поле для удаления: ")
         found = False
         for city in text:
-            if nomer == city["id"]:
+            if nomer == city['id']:
                 text.remove(city)
                 found = True
                 break
