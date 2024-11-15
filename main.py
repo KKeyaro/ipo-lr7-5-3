@@ -33,11 +33,11 @@ while True:
         count +=1
         with open("city.json", "w", encoding = "utf-8") as file:
             new = {}
-            new["id"] = input("Введите номер записи: ")
-            new["name"] = input("Введите название города: ")
-            new["country"] = input("Введите  название страны в котором находится город: ")
-            new["is_big"] = input("Является ли население города больше 100 000 человек(True/False): ")
-            new["people_count"] = input("Введите население города: ")
+            new['d'] = input("Введите номер записи: ")
+            new['name'] = input("Введите название города: ")
+            new['country'] = input("Введите  название страны в котором находится город: ")
+            new['is_big'] = input("Является ли население города больше 100 000 человек(True/False): ")
+            new['people_count'] = input("Введите население города: ")
             text.append(new)
             print("Запись добавлена")
             json.dump(text, file, indent = 5)
