@@ -24,7 +24,7 @@ while True:
         for zapis in text:
             if zapis['id'] == pole:
                 print("=" * 20, f"Номер записи: {zapis['id']}", "=" * 20,)
-                print(f"Название города: {zapis['name']} \nНазвание страны в котором находится город: {zapis['country']} \nЯвляется ли население города больше 100 000 человек: {zapis['is_big']} \nНаселение города: {zapis['[people_count']}")
+                print(f"Название города: {zapis['name']} \nНазвание страны в котором находится город: {zapis['country']} \nЯвляется ли население города больше 100 000 человек: {zapis['is_big']} \nНаселение города: {zapis['people_count']}")
                 found = True
                 break
         if found == False:
